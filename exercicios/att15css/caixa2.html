@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            background-color: beige;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(247, 215, 175);
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        main{
+            background-color: rgb(247, 215, 175);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.244);
+        }
+        article{
+            background-color:rgb(247, 215, 175);
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(244, 193, 131);
+        }
+        footer{
+            background-color: rgb(117, 102, 83);
+            color: rgb(247, 215, 175);
+            padding: 1px;
+            margin: 2px;
+           
+        }
+        p{
+            text-align: justify;
+        }
+        nav > a{
+            padding: 3px;
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(155, 183, 207);
+            margin-right: 40px;
+        }
+        nav >a:hover{
+            text-decoration: underline;
+        }
+        nav{
+            background-color: antiquewhite;
+            box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.135);
+        }
+        footer > p{
+            margin: 0px;
+            text-align: center;
+        }
+        div{
+            height: 80px;
+            width: 80px;
+            background-color: blueviolet;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1>olá, mundo</h1>
+        <nav>
+            <a href="@">neymar</a>
+            <a href="@">neymar</a>
+            <a href="@">neymar</a>
+        </nav>
+    </header>
+    <main><!--conteudo principal-->
+        <section id="assuntos">
+            <p>esportes coletivos
+            </p>
+
+        </section><!--um bloco grande, uma seção-->
+            <section id="noticias">
+                <article ><!--conteudo que faz sentido sozinho-->
+                    <h2>
+                        noticia da bola de ouro.
+                    </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim est laudantium quis amet nam placeat ex, sequi repudiandae dolor harum optio eligendi sint, iste deserunt maxime ab dolore vel sapiente?
+                        </p>
+                    
+                    <aside><!--conteudo complementar-->
+                        <p>Artigo escrito por filosofo cr7</p>
+                    </aside>
+                </article>
+            </section>
+        
+
+    </main>
+    <footer><!--rodape-->
+        
+        <p>desenvolvido por juninho play!</p>
+
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

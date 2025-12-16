@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div:hover{
+            color: rgb(94, 142, 142);
+        }
+        div > p{/*quando o p for filho da div ela nao vai ser exibida*/
+            display: none;
+        }
+        
+        div:hover > p{       
+            display: block;
+        }/*eu estou fazendo um texto escondido aparece quando passo o mouse*/
+    </style>
+</head>
+<body>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>passe o mouse aqui
+        <p>olha eu aqui</p>
+    </div>
+       
+</body>
+</html>

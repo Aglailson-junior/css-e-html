@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em htnl5</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>tente abrir o site em varios dispositivos ou aumente e diminus o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto flexivel">
+    </picture>
+    <!--esses source media type, sao usadas para a imagem ficar flexivel para todos dispositivos, e sempre usar na ordem caso contrario nao funciona bem. esses valor com px sao o tamanho maximo do navegador do usuario for menos que o valor usara a imagem menor-->
+    <h2>vou testar o uso de audios.</h2>
+    <!--<audio src="hungriahiphop-dubai-ae1017cf.mp3" controls autoplay></audio> <!--esse e uma for e existe outra que vou fazer logo abaixo-->
+    <p>essa versao e a mais versatil e que garante funcionamento em mais navegadores.</p>
+    <audio preload="metadata" controls>
+        <source src="hungriahiphop-dubai-ae1017cf.mp3" type="audio/mpeg">
+        <source src="hungriahiphop-dubai-ae1017cf.ogg" type="audio/ogg">
+       <!-- a ordem que esta e como ele tentara funcionar de cima para baixo-->
+        <p>o seu navegador nao consegue reproduzir audio. <a href="hungriahiphop-dubai-ae1017cf.mp3"> clique aqui para baixar o audio</a></p>
+    </audio>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas</title>
+    <style>
+        
+        @font-face {
+            font-family:'aranha';/*eu posso dar o nome*/
+            src: url(fontes/MidnightSpider.otf) format('opentype'), url(fontes/MidnightSpider.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*
+        tipos de formato()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (apple advanced typography)
+        -svg 
+       */
+        h1{
+            font-family: 'aranha', Arial, Helvetica, sans-serif;
+            font-weight: normal; /*se n colocar isso vai aparecer em negrito*/
+             /*tipos de alinhamento*/
+             text-align: center;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: normal;
+        }
+         p{
+             /*tipos de alinhamento
+             right, left, justify, center*/
+             text-align:justify;
+             text-indent: 15px; /*aqui serve para deixar um paragrafo. */
+         }
+    </style>
+</head>
+<body>
+    <h1>HOMEM ARANHA</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium aliquam eius dicta dolores, saepe deserunt libero dolore voluptates ex nostrum delectus. Distinctio accusantium nam perferendis minima voluptates. Laboriosam, beatae ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil sint facilis repellat, alias eveniet! Sapiente, distinctio minima rerum facilis porro error ex omnis tempore earum commodi perspiciatis quasi laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quod vitae quidem aliquid eligendi ex a iure facilis rerum, possimus aperiam totam doloremque voluptatum itaque inventore alias nesciunt quas debitis.</p>
+    
+</body>
+</html>
