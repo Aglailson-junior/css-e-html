@@ -6,19 +6,33 @@
     <title>tabelas</title>
     <style>
         table{
-            width: 300px;
+            width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
             padding: 6px;
         }
         thead, tfoot{
-            background-color: rgb(139, 139, 139);
+            background-color: rgb(96, 96, 96);
             color: white;
         }
         .num{
             text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tbody > tr:nth-child(2n){   /*posso usar 2n, 3n, 4n..... ou even(par) ou odd(impar))*/
+            background-color: lightgray;
+        }
+        thead > tr > th{   /*estou escolhendo o th que esta dentro de um tr que esta dentro do thead. E essas configurações sao para fixar no topo da tela*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(96, 96, 96);
         }
     </style>
 </head>
@@ -26,6 +40,7 @@
     <h1>uso de tabelas grandes.</h1>
     <!-- anatomia  para tabelas grandes
      table 
+          caption
           thead
                tr, td, th
           tbody
@@ -34,10 +49,11 @@
                tr, td, th
 -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!--estou dizendo que Estado e população os dados estao em coluna um abaixo do outro-->
+                <th scope="col" style="width: 80px;">População</th>
 
             </tr>
 
@@ -154,7 +170,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th> <!--aqui uso row pq o dado esta na msm linha-->
                 <td class="num"><strong>213.421.037</strong></td>
             </tr>
 
