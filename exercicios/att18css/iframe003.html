@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa natus recusandae eligendi, nemo quo atque maiores id libero maxime rem error, molestiae minima iste a tempora corporis! Aperiam, sed iusto.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="tela">primeira pagina</a></li>
+        <li><a href="paginas-extras/pag002.html" target="tela">segunda pagina</a></li>
+        <li><a href="paginas-extras/pag003.html" target="tela">terceira pagina</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa natus recusandae eligendi, nemo quo atque maiores id libero maxime rem error, molestiae minima iste a tempora corporis! Aperiam, sed iusto.</p>
+
+    <iframe name="tela" srcdoc="<h1> Escolha uma das opções para ser exibida. <img src='imagens/sp.png'>">
+        <p>Infelizmente seu navegador não e compativel com isso.</p>
+    </iframe> <!--usei desse jeito que e possivel fazer algo basico para não deixar o iframe em branco mas seria reconmendado usar alguma pagina separada para o iframe ficar mais bonito   -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa natus recusandae eligendi, nemo quo atque maiores id libero maxime rem error, molestiae minima iste a tempora corporis! Aperiam, sed iusto.</p>
+    
+</body>
+</html>
