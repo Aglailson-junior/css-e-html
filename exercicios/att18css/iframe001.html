@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        iframe{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>testando o uso de um iframe</h1>
+    <h2>forma 1</h2>
+    <p><a href="https://www.saopaulofc.net/" target="_blank">São Paulo</a> o maior time do 
+    Brasil!</p>
+    <br>
+    
+   <!-- aqui uso o iframe para mostrar em uma janela algum site.
+     <p>
+        <iframe src="https://www.saopaulofc.net/" frameborder="0"></iframe>
+        o maior time do Brasil!</p> -->
+    <h2>forma 2</h2>
+    <p>
+        <!--por padro o tamanho do iframe e 300x150-->
+        <iframe src="https://www.saopaulofc.net/" frameborder="0" height="400" scolling="auto"> <!--scolling=""  tag para barra de rolagem-->
+            <a href="https://www.saopaulofc.net/"  target="_blank"> São Paulo FC</a>
+        </iframe> <!-- esse a href dentro do iframe funciona se o iframe nao aparecer no dispositivo do usuario servindo como uma segunda opção-->
+        
+        o maior time do Brasil!
+    </p>
+
+    <p>
+        as novas materias do
+
+        <iframe src="https://ge.globo.com/" frameborder="0" height="400" >
+            <a href="https://ge.globo.com/" target="_blank">GE</a>
+        </iframe>
+
+        vale a pena dar uma olhada.
+    </p>
+</body>
+</html>
