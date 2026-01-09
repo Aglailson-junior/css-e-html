@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* estilo para impressoras*/
+
+*{
+    padding: 10px;
+    margin: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    content: 'Esse artigo foi impresso através do site github.io/Aglailson-junior ';
+}
+ article{
+    width: 100%;
+ }
