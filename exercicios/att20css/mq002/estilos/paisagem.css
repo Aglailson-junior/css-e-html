@@ -2,9 +2,10 @@
 
 /*aparelho deitado (landscape)*/
 html, body{
-    background-color: darksalmon;
-    background: url(../imagens/cev-landscape.jpg);
+    background-image: url(../imagens/cev-landscape.jpg);
     background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
     
     
 }
