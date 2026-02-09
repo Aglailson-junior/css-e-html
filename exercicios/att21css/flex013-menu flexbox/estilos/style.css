@@ -5,6 +5,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 header{
@@ -17,6 +18,13 @@ header h1{
     padding: 5px;
     display: inline-block;
 }
+
+a{
+    background-color: rgb(46, 46, 46);
+    margin: 2px;
+}
+
+
 main{
     background-color: white;
     border-radius: 10px;
@@ -35,92 +43,60 @@ p{
     padding: 10px;
     text-align: justify;
 }
-
-nav#container{
+#container{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-a.item{
-    color: white;
-    text-decoration: none;
+header #segundo{
+    display: flex;
+    justify-content: flex-end;
+
     margin: 5px;
-    padding: 5px;
-    background-color: rgb(46, 46, 46);
+    padding: 0px;
     border-radius: 4px;
     text-align: center;
     align-content: center;
 }
 
-a.item:hover{
+nav a{
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+}
+
+#primeiro{
+    justify-content: flex-start;
+
+}
+
+
+
+a:hover{
     background-color: rgba(108, 106, 106, 0.578);
     color: black;
 }
 
-a#primeiro{
-    flex: 0 0 80px;
-}
-a#segundo{
-    flex: 0 0 110px;
-    
-}
-a#terceiro{
-    flex: 0 0 80px;
-}
-a#quarto{
-    flex: 0 0 80px;
-}
-a#quinto{
-    flex: 0 0 100px;
-}
-a#sexto{
-    flex: 0 0 80px;
-}
 @media (min-width:639px) and (max-width:1045px) {
 
-    nav#container{
+    #container{
         justify-content: flex-start;
     }
     
 }
 @media (max-width:638px){
 
-    nav#container{
+    #segundo{
         display: flex;
         flex-flow: column nowrap;
-        margin: 0px;
-        padding: 0px;    
-}
-a.item{
-    margin: 3px;
-}
-    a#primeiro{
-        flex: 0 1 auto;
-}
-    a#segundo{
-
-        flex: 0 1 auto;
-        
-    }
-    a#terceiro{
-
-        flex: 0 1 auto;
-    }
-    a#quarto{
-
-        flex: 0 1 auto;
-    }
-    a#quinto{
-
-        flex: 0 1 auto;
-    }
-    a#sexto{
-
-        flex: 0 1 auto;
-    }
+        width: 100vw;
 
 }
+
+}
+
+
     
 
