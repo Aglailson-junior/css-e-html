@@ -7,16 +7,29 @@
     <style>
         div.container{
             border: 3px solid blue;
-            height: 200px;
             display: grid;
             /*grid-template-columns: repeat(3, auto);
             grid-template-rows: repeat(3, auto);
             simplificar esse codigo*/
-            grid-template: /*row*/repeat(3, auto) //*column*/ repeat(3, auto);
-            align-items:normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content:stretch;
+            grid-template-rows: repeat(3, 80px); /*altura*/
+            grid-auto-rows: 80px;
+
+            grid-template-columns: 100px 40% repeat(2, 1fr); /* posso misturar fração com porcentagem e valor em px, column define=largura*/
+            grid-auto-columns: 120px;
+            grid-auto-flow: row;
+
+
+            /*align-items:end;
+            justify-items: center;*/
+
+            place-items: /*align dps justify*/ normal normal;
+
+            /*align-content: space-around;
+            justify-content:space-evenly;*/
+
+            place-content: /* align dps justify*/ normal normal;
+            
+
             gap: 5px;
 
         }
@@ -34,6 +47,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
     
 </body>

@@ -13,10 +13,17 @@
             grid-template-rows: repeat(3, auto);
             simplificar esse codigo*/
             grid-template: /*row*/repeat(3, auto) //*column*/ repeat(3, auto);
-            align-items:normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content:stretch;
+            /*align-items:end;
+            justify-items: center;*/
+
+            place-items: /*align dps justify*/ end center;
+
+            /*align-content: space-around;
+            justify-content:space-evenly;*/
+
+            place-content: /* align dps justify*/ space-around space-evenly;
+            
+
             gap: 5px;
 
         }
